@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Slideshow / Carusel</title>
+  </head>
+  <body>
+    <div id="image-gallery">
+      <img src="img/01.jpg" alt="Image 1" />
+      <img src="img/02.jpg" alt="Image 2" />
+      <img src="img/03.jpg" alt="Image 3" />
+      <img src="img/04.jpg" alt="Image 4" />
+      <img src="img/05.jpg" alt="Image 5" />
+    </div>
+
+    <div id="thumbnail-gallery">
+      <img src="img/01.jpg" onclick="changeImage(0)" alt="Thumbnail 1" />
+      <img src="img/02.jpg" onclick="changeImage(1)" alt="Thumbnail 2" />
+      <img src="img/03.jpg" onclick="changeImage(2)" alt="Thumbnail 3" />
+      <img src="img/04.jpg" onclick="changeImage(3)" alt="Thumbnail 4" />
+      <img src="img/05.jpg" onclick="changeImage(4)" alt="Thumbnail 5" />
+    </div>
+
+    <div id="buttons">
+      <button id="play" onclick="playSlideshow()">Play</button>
+      <button id="stop" onclick="stopSlideshow()">Stop</button>
+      <button id="prev" onclick="prevSlide()">Previous</button>
+      <button id="next" onclick="nextSlide()">Next</button>
+    </div>
+  </body>
+</html>

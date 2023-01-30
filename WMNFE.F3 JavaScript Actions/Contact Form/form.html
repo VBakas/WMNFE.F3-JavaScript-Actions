@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <section claas="container">
+      <form name="Form" onsubmit="return validateForm()">
+        <h2>Registration Form</h2>
+        <div class="box">
+          <label>Full Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="E.g John Smith"
+          />
+          <div class="error" id="nameErr"></div>
+        </div>
+        <div class="box">
+          <label>Email </label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="E.g example@domain.com"
+          />
+          <div class="error" id="emailErr"></div>
+        </div>
+        <div class="box">
+          <label>Confirm Email</label>
+          <input
+            type="text"
+            name="emailcom"
+            id="emailcom"
+            placeholder="E.g example@domain.com"
+          />
+          <div class="error" id="emailComErr"></div>
+        </div>
+        <div class="box">
+          <label>Mobile Number</label>
+          <input
+            type="text"
+            name="mobile"
+            id="mobile"
+            placeholder="E.g +30 9876543210"
+          />
+          <div class="error" id="mobileErr"></div>
+        </div>
+        <div class="box">
+          <label>Address</label>
+          <input
+            type="text"
+            name="address"
+            id="address"
+            placeholder="E.g Kolokotroni 123, 55555 Athens"
+          />
+          <div class="error" id="addressErr"></div>
+        </div>
+        <div class="box">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
